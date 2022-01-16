@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Signin{% endblock title %}
+{% block body %}
+<style>
+    .form-group{
+        padding: 10px;
+    }
+</style>
+    <div>
+        <form action="post"  style="display:flex;flex-direction:column;margin:100px; justify-content:center;align-items:center">
+            <h2 style="text-align: center;">Signin</h2>
+            <div class='form-group'>
+                <input type="text" class='form-control mt-2' placeholder="Enter your Email ID" name='email' required>
+            </div>
+            <div class="form-group">
+                <input type="password" class='form-control mt-2' placeholder="Enter Your Password" name='password' required>
+            </div>
+            <br>
+            <button type='submit' class="btn btn-info">Signin</button>
+        </form>
+    </div>
+{% endblock body %}
